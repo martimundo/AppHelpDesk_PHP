@@ -32,6 +32,7 @@
             
             echo "Usuário Autenticado com Sucesso!";
             $_SESSION['autenticado'] = 'Sim';
+            header('Location: home.php');
         }else{
             
             $_SESSION['autenticado'] = 'Não';
