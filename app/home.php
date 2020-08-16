@@ -10,7 +10,7 @@
     <title>Suporte Help Desk</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link href="/res/site/css/fontawesome-all.css" rel="stylesheet">
     <style>
       .card-home {
         padding: 30px 0 0 0;
@@ -27,6 +27,11 @@
         <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Suporte Help Desk
       </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-linh fas fa-sign-out-alt" href="logout.php">Logout</a>         
+        </li>      
+      </ul>
     </nav>
 
     <div class="container">    
