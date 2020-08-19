@@ -1,6 +1,6 @@
 <?php
   session_start();
-  echo $_SESSION['autenticado'];
+  
 ?>
 
 <html>
@@ -9,7 +9,7 @@
     <title>Suporte Help Desk</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    
     <style>
       .card-login {
         padding: 30px 0 0 0;
@@ -45,12 +45,12 @@
                 <div class="form-group">
                   <input name="senha" type="password" class="form-control" placeholder="Senha">
                 </div>
-                <? if(!isset($_GET['login']) && $_GET['login'] == 'erro'){ ?>
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro'){ ?>
                       <div class="text-danger">
                         Usuário e Senhas e Inválidos!!
                       </div> 
                 <? } ?>
-                <? if(!isset($_GET['login']) && $_GET['login'] == 'erro2'){ ?>
+                <? if(isset($_GET['login']) && $_GET['login'] == 'erro2'){ ?>
                       <div class="text-danger">
                         Faça login antes de acessar as páginas protegidas
                       </div> 
